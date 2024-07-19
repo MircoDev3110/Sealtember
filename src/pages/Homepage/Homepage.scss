@@ -1,0 +1,128 @@
+@import '../../App.scss';
+
+.bighero-row {
+    @include default-row;
+}
+
+.home-bighero-container {
+    @include default-column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.home-bighero-container .bighero-text {
+    flex: 0 0 calc(50% - 100px);
+    margin: 0 50px;
+}
+
+.home-bighero-container .bighero-text .bighero-title {
+    font-size: 2.5rem;
+}
+
+.home-bighero-container .bighero-text .bighero-subtitle {
+    font-weight: normal;
+    font-size: 1.5rem;
+    margin: 10px 0 30px 0;
+}
+
+.home-bighero-container .bighero-image {
+    flex: 0 0 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center right;
+    min-height: 600px;
+    width: 100%;
+}
+
+.about-row {
+    @include default-row;
+    background-color: var(--accentLight);
+
+}
+
+.about-row .about-text-column {
+    @include default-column;
+    max-width: 750px;
+    margin: 40px 15px;
+}
+
+.about-row .about-title {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.about-row .twitch-link {
+    text-decoration: underline;
+    color: #9e00e7;
+}
+
+.prompt-row {
+    @include default-row;
+}
+
+.prompt-row .prompt-col {
+    @include default-column;
+    margin: 40px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.prompt-row .prompt-title-wrapper {
+    margin-bottom: 30px;
+    max-width: 750px;
+}
+
+.prompt-row .prompt-title-wrapper .prompt-title {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.prompt-row .prompt-list-container {
+    display: flex;
+    justify-content: center;
+}
+
+.prompt-row .prompt-column.left-col {
+    margin-right: 150px;
+}
+
+.prompt-row .prompt-item {
+    font-size: 1.2rem;
+    margin-bottom: 7px;
+}
+
+.prompt-row .prompt-item .prompt-item-pos {
+    margin-right: 10px;
+    font-size: 1rem;
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .home-bighero-container {
+        flex-direction: column-reverse;
+        margin-bottom: 40px;
+    }
+    
+    .home-bighero-container .bighero-text {
+        flex: 0 0 auto;
+        text-align: center;
+        margin: 0 15px;
+    }
+
+    .home-bighero-container .bighero-image {
+        flex: 0 0 auto;
+        min-height: 500px;
+        background-position: center;
+    }
+
+    .prompt-row .prompt-list-container {
+        flex-direction: column;
+    }
+
+    .prompt-row .prompt-column.left-col {
+        margin-right: 0;
+    }
+}

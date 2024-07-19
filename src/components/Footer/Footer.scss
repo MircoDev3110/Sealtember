@@ -1,0 +1,17 @@
+@import '../../App.scss';
+
+.footer-row {
+    @include default-row;
+    background-color: var(--bgColor);
+    border-top: solid 2px #E9E9E9;
+}
+
+.footer-row .footer-col {
+    @include default-column;
+    margin: 10px;
+}
+
+.footer-row .footer-text {
+    text-align: center;
+    font-size: 0.8rem;
+}

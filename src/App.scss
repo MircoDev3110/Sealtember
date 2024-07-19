@@ -1,10 +1,64 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
+:root {
+    --bgColor: #FFF;
+    --textColor: #333;
+    --fontFamily: 'Raleway', sans-serif;
+    --accentColor: #35B084;
+    --accentLight: #D8FFE0;
+}
+
+@mixin default-row {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+@mixin default-column {
+    display: block;
+    width: 100%;
+    max-width: 1680px;
+}
+
 html, body {
     position: relative;
     font-size: 15px;
-    font-family: 'Raleway', sans-serif;
+    font-family: var(--fontFamily);
     padding: 0;
     margin: 0;
     font-weight: 500;
+    color: var(--textColor);
+    background-color: var(--bgColor);
+}
+
+a {
+    text-decoration: none;
+    color: var(--textColor);
+}
+
+a:visited, a:focus {
+    color: var(--textColor);
+}
+
+.default-btn {
+    background: var(--accentColor);
+    color: var(--bgColor);
+    padding: 10px 20px;
+    border: 2px solid var(--accentColor);
+    border-radius: 200px;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: var(--fontFamily);
+    transition: 0.3s ease;
+}
+
+.default-btn:hover,
+.default-btn:active {
+    cursor: pointer;
+    background-color: var(--bgColor);
+    color: var(--accentColor);
+}
+
+h1, h2, h3, h4, p {
+    margin: 0;
 }

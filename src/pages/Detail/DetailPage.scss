@@ -1,0 +1,97 @@
+@import '../../App.scss';
+
+.cover-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cover-container .cover-image {
+    max-height: 450px;
+    height: 100%;
+}
+
+.cover-container .cover-info {
+    color: #666;
+}
+
+.movement-data-row {
+    @include default-row;
+}
+
+.movement-data-row .movement-data-col {
+    @include default-column;
+    max-width: 750px;
+    margin: 20px 15px;
+}
+
+.movement-data-row .movement-name {
+    text-align: center;
+    display: block;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.movement-data-row .back-arrow {
+    display: inline-flex;
+    align-items: center;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.movement-data-row .back-arrow .icon {
+    font-size: 1rem;
+    margin-right: 5px;
+}
+
+.movement-data-row .back-arrow-text {
+    text-decoration: underline;
+}
+
+.movement-data-row .movement-description {
+    font-size: 1.2rem;
+    white-space: pre-line;
+    margin-bottom: 20px;
+}
+
+.sources-row {
+    @include default-row;
+    background-color:  var(--accentLight);
+}
+
+.sources-row .sources-col {
+    @include default-column;
+    margin:40px 15px;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sources-row .sources-title {
+    text-align: center;
+}
+
+.sources-row .sources-list {
+    max-width: 500px;
+    width: 100%;
+}
+
+.sources-row .sources-list .list-item .material-symbols-outlined {
+    font-size: 0.9rem;
+    margin-left: 5px;
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+
+    .cover-container .cover-image {
+        height: auto;
+        max-height: none;
+        max-width: 600px;
+        width: 100%;
+    }
+
+}

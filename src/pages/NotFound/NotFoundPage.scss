@@ -1,0 +1,20 @@
+.not-found-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px;
+}
+
+.not-found-cont .material-symbols-outlined {
+    font-size: 5em;
+    color: var(--accentColor);
+}
+
+.not-found-cont .title {
+    margin: 10px 0 20px 0;
+}
+
+.not-found-cont .default-btn {
+    color: var(--bgColor);
+}

@@ -1,10 +1,22 @@
+import { Routes, Route, HashRouter } from 'react-router-dom';
 import './App.scss';
-import WorkInProgress from './components/WorkInProgress/WorkInProgress';
+import Homepage from './pages/Homepage/Homepage';
+import DetailPage from './pages/Detail/DetailPage';
+import NotFoundPage from './pages/NotFound/NotFoundPage';
 
 const App = () => {
 
   return (
-    <WorkInProgress />
+    
+    <HashRouter>
+      <Routes>
+        <Route path='/' element={<Homepage />} />
+        <Route path='/prompt/:id' element={<DetailPage />} />
+        <Route path='/not-found' element={<NotFoundPage />} />
+        <Route path='/*' element={<NotFoundPage />} />
+      </Routes>
+    </HashRouter>
+
   );
 
 }

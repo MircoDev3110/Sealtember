@@ -63,7 +63,7 @@ const Homepage : React.FC = () => {
 
                     <div className='prompt-title-wrapper'>
                         <h2 className='prompt-title'>Elenco dei Temi</h2>
-                        <p className='prompt-subtitle'>Qui sono elencati i 30 movimentiu artistici per questa edizione del Sealtember, cliccando su ciascun tema potrai vedere una scheda dedicata al movimento artistico per scoprirne di più e trovare ispirazione</p>
+                        <p className='prompt-subtitle'>Qui sono elencati i 30 movimenti artistici per questa edizione del Sealtember, cliccando su ciascun tema potrai vedere una scheda dedicata al movimento artistico per scoprirne di più e trovare ispirazione</p>
                     </div>
 
                     <div className='prompt-list-container'>

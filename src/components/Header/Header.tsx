@@ -41,7 +41,7 @@ const DesktopHeader = () => {
                     </Link>
 
                     <div className='page-links'>
-                        <a href="/">Home</a>
+                        <Link to="/">Home</Link>
                     </div>
 
                 </div>

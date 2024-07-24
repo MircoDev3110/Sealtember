@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/Sealtember/static/css/main.c7001faa.css",
-    "main.js": "/Sealtember/static/js/main.1cbf7bf8.js",
+    "main.js": "/Sealtember/static/js/main.ac440aea.js",
     "static/js/453.3809443d.chunk.js": "/Sealtember/static/js/453.3809443d.chunk.js",
     "static/media/bighero.png": "/Sealtember/static/media/bighero.0bca8f6246bb63ca14ec.png",
     "index.html": "/Sealtember/index.html",
     "main.c7001faa.css.map": "/Sealtember/static/css/main.c7001faa.css.map",
-    "main.1cbf7bf8.js.map": "/Sealtember/static/js/main.1cbf7bf8.js.map",
+    "main.ac440aea.js.map": "/Sealtember/static/js/main.ac440aea.js.map",
     "453.3809443d.chunk.js.map": "/Sealtember/static/js/453.3809443d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c7001faa.css",
-    "static/js/main.1cbf7bf8.js"
+    "static/js/main.ac440aea.js"
   ]
 }

@@ -67,12 +67,12 @@
     flex-direction: column;
 }
 
-.prompt-list > a[b-8t2xa0cbwv] {
+[b-8t2xa0cbwv] .prompt-list > a {
     margin-bottom: 5px;
     display: inline-block;
 }
 
-.prompt-list > a:hover[b-8t2xa0cbwv] {
+[b-8t2xa0cbwv] .prompt-list > a:hover {
     text-decoration: underline;
 }
 /* /Pages/NotFound.razor.rz.scp.css */
@@ -90,7 +90,7 @@
     margin-bottom: 20px;
 }
 
-.empty-container .home-link[b-u5tg1ha1fw] {
+[b-u5tg1ha1fw] .empty-container .home-link {
     color: var(--accentColor);
     text-decoration: underline;
 }
@@ -193,6 +193,12 @@
     display: flex;
 }
 
+[b-fdn2cmw8a6] .desktop-link-item {
+    display: inline-block;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
 .burger-menu[b-fdn2cmw8a6] {
     display: none;
     font-size: 1.3rem;
@@ -222,7 +228,7 @@
     flex-direction: column;
 }
 
-.burger-menu-overlay .sidebar-links[b-fdn2cmw8a6] {
+[b-fdn2cmw8a6] .sidebar-links {
     margin: 10px 30px;
 }
 
@@ -233,19 +239,13 @@
     cursor: pointer;
 }
 
-.desktop-navbar-links > a[b-fdn2cmw8a6] {
-    display: inline-block;
-    margin-right: 20px;
-    font-weight: bold;
-}
-
-.navbar-logo[b-fdn2cmw8a6] {
+[b-fdn2cmw8a6] .navbar-logo {
     max-width: 50px;
     display: inline-block;
     line-height: 0;
 }
 
-.navbar-logo > img[b-fdn2cmw8a6] {
+[b-fdn2cmw8a6] .navbar-logo > img {
     width: 100%;
 }
 

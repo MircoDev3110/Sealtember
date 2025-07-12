@@ -23,7 +23,7 @@ html, body {
 }
 
 a, a:visited {
-    text-decoration: none;
+    text-decoration: underline;
     color: var(--darkColor);
 }
 

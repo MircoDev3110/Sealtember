@@ -202,7 +202,13 @@
 
 .prompt-day-text[b-qryjmxo9so] {
     display: inline-block;
-    margin: 5px 0;
+    margin: 7px 0;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.prompt-day-text .fa-calendar[b-qryjmxo9so] {
+    margin-right: 3px;
 }
 
 .btns-container[b-qryjmxo9so] {
@@ -219,16 +225,22 @@
     margin: 0 10px;
     cursor: pointer;
     border-radius: 10px;
-    color: var(--lightColor);
-    background: var(--accentColor);
     border: solid 2px var(--accentColor);
     transition: .25s ease;
 }
 
-.btns-container[b-qryjmxo9so]  .link-btn:hover,
-.btns-container[b-qryjmxo9so]  .link-btn:active {
+.btns-container[b-qryjmxo9so]  .link-btn.next {
+    color: var(--lightColor);
+    background: var(--accentColor);
+}
+
+.btns-container[b-qryjmxo9so]  .link-btn.previous {
     background: var(--lightColor);
     color: var(--accentColor);
+}
+
+.btns-container[b-qryjmxo9so]  .link-btn:hover {
+    transform: scale(1.05);
 }
 
 .btns-container[b-qryjmxo9so]  .link-btn .fa-arrow-left {
@@ -341,10 +353,11 @@
 }
 
 .burger-menu-overlay .side-bar i.fa-times[b-fdn2cmw8a6] {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     padding: 10px;
     align-self: flex-end;
     cursor: pointer;
+    margin-bottom: 20px;
 }
 
 [b-fdn2cmw8a6] .navbar-logo {
